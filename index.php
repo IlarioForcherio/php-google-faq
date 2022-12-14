@@ -2,7 +2,7 @@
 
 $faq = [
     [
-      "question" => "Come state implementando la recente decisione della Corte di         giustizia dell'Unione europea (CGUE) relativa al diritto all'oblio?",
+      "question" => "Come state implementando la recente decisione della Corte di  giustizia dell'Unione europea (CGUE) relativa al diritto all'oblio?",
        
       "answer"   => [
         
@@ -85,10 +85,20 @@ $faq = [
          ],
       ], 
 
-]
+    ];
 
 
 
+
+    foreach ($faq as $val ) {
+       echo "<h2>" .  $val['question'] . "</h2>";
+       
+       foreach($val['answer'] as $valu ){
+
+        echo  $valu . '<br>' . "<hr>" ;
+
+       }
+      }
 
 
 
@@ -114,15 +124,24 @@ $faq = [
 </head>
 
 <body>
-  <header>
-    <!-- place navbar here -->
-  </header>
-  <main>
 
-  </main>
-  <footer>
-    <!-- place footer here -->
-  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
